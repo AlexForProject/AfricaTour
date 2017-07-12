@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/maps"
+            android:icon="@mipmap/ic_map_black_24dp"
+            android:title="@string/myTour" />
+        <item
+            android:id="@+id/loisirs"
+            android:icon="@mipmap/ic_shopping_cart_black_24dp"
+            android:title="@string/loisirs" />
+
+    </group>
+
+    <item android:title="Media">
+        <menu>
+            <item
+                android:id="@+id/camera"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Take a picture" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/gallery"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Gallery" />
+        </menu>
+    </item>
+
+    <item android:title="@string/contact">
+        <menu>
+            <item
+                android:id="@+id/phone"
+                android:icon="@mipmap/ic_phone_black_24dp"
+                android:title="@string/phone"
+                />
+            <item
+                android:id="@+id/mail"
+                android:icon="@mipmap/ic_mail_black_24dp"
+                android:title="@string/mail"
+                />
+        </menu>
+    </item>
+
+</menu>
