@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".activities.activities.retrofit.RetrofitBuilder"/>
+        <activity android:name=".activities.activities.retrofit.OkHttpClass"/>
+        <activity android:name=".activities.activities.GlobalForSettings"/>
 
 
         <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
@@ -32,6 +34,7 @@
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-feature android:name="android.hardware.camera"
             android:required="true" />
+
 
     </application>
 
