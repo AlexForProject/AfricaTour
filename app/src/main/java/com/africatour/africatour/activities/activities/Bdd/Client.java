@@ -170,4 +170,8 @@ public class Client {
     public void setNum_membre(String num_membre) {
         this.num_membre = num_membre;
     }
+
+    public Client(){
+
+    }
 }
