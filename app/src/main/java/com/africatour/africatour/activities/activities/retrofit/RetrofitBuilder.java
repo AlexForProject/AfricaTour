@@ -2,6 +2,7 @@ package com.africatour.africatour.activities.activities.retrofit;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -25,7 +26,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitBuilder extends AppCompatActivity{
-    private static final String BASE_URL = "http://10.0.2.2:8081";
+    private static final String BASE_URL = "http://10.0.2.2:80";
     Context ctx;
     String user;
     String password;
@@ -70,6 +71,7 @@ public class RetrofitBuilder extends AppCompatActivity{
             public void onFailure(Call<List<Client>> call, Throwable t) {
                 CharSequence erreur = t.getMessage();
                 Toast.makeText(ctx, erreur, Toast.LENGTH_LONG).show();
+                Log.e("ERREUR", t.toString());
             }
         });
     }
